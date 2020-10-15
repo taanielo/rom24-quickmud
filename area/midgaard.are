@@ -953,6 +953,21 @@ ACHS PQ -100 0
 EFJN 0 0 0
 stand stand either 100
 0 0 medium 0
+#3164
+Cain~
+Deckard Cain~
+Deckard Cain is here, reading some very old and thick books.
+~
+Cain isn't what he says he is. Sure, sure, he talks a good story...some of 'em
+are real scary or funny...but I think he knows more than he knows he knows.
+~
+human~
+ABVe 0 900 0
+40 0 1d1+999 1d1+999 5d6+20 magic
+-15 -15 -15 -15
+FG ABCD 0 0
+stand stand male 1000
+0 0 medium 0
 #0
 
 #OBJECTS
@@ -2054,9 +2069,9 @@ To    <---West---Main-Street---Market----Main-Street-+--------East--->Cross
 Shire,    Gate     |      |    Square    |           |        Gate    Roads
 Forest of  |     Mage  Armoury   |     Jeweler    Warrior       |
 Haon-Dor   |     Guild           |                 Guild     Wall Road
-          Wall                   |                              |
-          Road  Leather  Map     |    Grebe's  Pet   Apothecary |
-           |     Shop    Shop    |    Tavern   Shop  (Potions)  |
+          Wall                   |    Grebe's                   |
+          Road  Leather  Map     |    Tavern   Pet   Apothecary |
+           |     Shop    Shop    |    (Sage)   Shop  (Potions)  |
            |      |       |    Common   |       |       |       |
           Wall---Poor-Alley----Square---Dark-Alley------+----Wall Road
           Road    |       |      |      |       |       |       |
@@ -6422,6 +6437,7 @@ M 0 3144   1 3120  1	* the town crier
 O 0 3135   2 3141	* a fountain
 O 0 3136   -1 3141	* a small pile of coins
 M 0 3012   5 3054  1	* the healer
+M 0 3164   1 3352  1	* Deckard Cain
 O 0 3200   -1 3003  1
 O 0 3200   -1 3007  1
 O 0 3200   -1 3018  1
@@ -6478,6 +6494,7 @@ M 3100 spec_cast_cleric    	* the maid
 M 3120 spec_cast_cleric    	* the sexton
 M 3143 spec_mayor          	* the mayor
 M 3163 spec_nasty          	* the thief
+M 3164 spec_sage           	* Cain
 S
 
 #$

@@ -17,7 +17,7 @@ Syntax: colour    Toggles colour mode on/off
         You may also talk in colour; the format is like this:
         the 'escape character' to specify a colour is the left
         handed brace '{{', following
-        that you should use one of the following letters,  
+        that you should use one of the following letters,
         {r{{r     red      {c{{c     cyan
         {g{{g     green    {y{{y     yellow
         {b{{b     blue     {w{{w     white
@@ -39,7 +39,7 @@ Syntax: colour <field> <colour>
         You may configure your colour setting for personal preference.
         current setting are indicated by colour.
 
-fields are:                                    
+fields are:
   {ttext         {aauction      {dgossip       {emusic        {qquestion
   {fanswer       {hclass_text   {Hclass_name   {iimmtalk_text
 
@@ -159,7 +159,7 @@ recite quaff zap brandish           description password title
 lock unlock open close pick         bug idea typo
 inventory equipment look compare    gossip cgossip say shout tell yell
 eat drink fill                      emote pose
-list buy sell value                 note
+list buy sell value identify        note
 
 COMBAT                              OTHER
 kill flee kick rescue disarm        ! save quit
@@ -417,8 +417,8 @@ note list [number]                      Shows up to number notes.
 note write                              Posts a note.
 note catchup                            Marks all notes in this board read.
 
-These commands are used for the new note system. Instead of just one board, 
-there are several, each with its special purpose. 
+These commands are used for the new note system. Instead of just one board,
+there are several, each with its special purpose.
 
 Changing between the boards is accomplished using the BOARD command. BOARD
 without any arguments gives you a list of all boards together with number of
@@ -426,11 +426,11 @@ unread message. To change, type BOARD <number> or BOARD <name of the board>.
 
 To read next unread note, type NOTE. To read a note with a specified number,
 type NOTE READ <number>. Typing NOTE while in a board with no unread notes
-shifts you to the next board. Note that unlike the standard note system, a 
+shifts you to the next board. Note that unlike the standard note system, a
 note has the same number in NOTE LIST and NOTE READ.
 
-Posting a message is as simple as writing NOTE WRITE. You will be moved 
-into interactive mode, where all you see are prompts for the fields like 
+Posting a message is as simple as writing NOTE WRITE. You will be moved
+into interactive mode, where all you see are prompts for the fields like
 To:, From: etc. You will be automatically put AFK while writing a note.
 
 To see the list of the notes in the current board, type NOTE LIST. Typing
@@ -700,6 +700,18 @@ List <name> shows you only objects of that name.
 SELL sells an object to a shop keeper.
 
 VALUE asks the shop keeper how much he, she, or it will buy the item for.
+~
+
+0 IDENTIFY~
+Syntax: identify      <object>
+Syntax: identify cost <object>
+
+You can let sage to identify your items. You can only identify items you
+are carrying or wearing. Identify cost depends of an item level.
+
+IDENTIFY COST asks the sage how much he or she will ask for item identification.
+
+Mages and clerics can identify items with identify spell.
 ~
 
 0 SACRIFICE~

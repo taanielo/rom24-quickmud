@@ -64,6 +64,7 @@ DECLARE_SPEC_FUN (spec_nasty);
 DECLARE_SPEC_FUN (spec_troll_member);
 DECLARE_SPEC_FUN (spec_ogre_member);
 DECLARE_SPEC_FUN (spec_patrolman);
+DECLARE_SPEC_FUN(spec_sage);
 
 /* the function table */
 const struct spec_type spec_table[] = {
@@ -89,6 +90,7 @@ const struct spec_type spec_table[] = {
     {"spec_troll_member", spec_troll_member},
     {"spec_ogre_member", spec_ogre_member},
     {"spec_patrolman", spec_patrolman},
+    {"spec_sage", spec_sage},
     {NULL, NULL}
 };
 
@@ -1188,4 +1190,9 @@ bool spec_thief (CHAR_DATA * ch)
     }
 
     return FALSE;
+}
+
+bool spec_sage(CHAR_DATA *ch) {
+
+	return FALSE;
 }

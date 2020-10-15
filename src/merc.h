@@ -25,6 +25,7 @@
  *    ROM license, in the file Rom24/doc/rom.license                       *
  ***************************************************************************/
 
+#include <stdio.h>
 
 /*
  * Accommodate old non-Ansi compilers.
@@ -761,6 +762,7 @@ struct    kill_data
 #define ACT_GAIN           (bb)
 #define ACT_UPDATE_ALWAYS  (cc)
 #define ACT_IS_CHANGER     (dd)
+#define ACT_IS_SAGE			(ee)
 
 /* damage classes */
 #define DAM_NONE            0

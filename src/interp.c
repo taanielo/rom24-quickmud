@@ -231,6 +231,7 @@ const struct cmd_type cmd_table[] = {
     {"value", do_value, POS_RESTING, 0, LOG_NORMAL, 1},
     {"wear", do_wear, POS_RESTING, 0, LOG_NORMAL, 1},
     {"zap", do_zap, POS_RESTING, 0, LOG_NORMAL, 1},
+	{"identify", do_identify, POS_RESTING, 0, LOG_NORMAL, 1},
 
     /*
      * Combat commands.
